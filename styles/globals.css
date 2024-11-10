@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Global Styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #f7fafc; /* Light text */
+  font-family: 'Arial', sans-serif;
+}
+
+h1, h2, p {
+  animation-duration: 1.5s;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(45deg, #4a90e2, #50e3c2);
+  animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Hover effect for images */
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+.transform:hover {
+  transform: scale(1.05);
+}
